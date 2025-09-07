@@ -1,8 +1,6 @@
 pipeline {
   agent any
-  tools {
-    git 'git'   
-  }
+  options { skipDefaultCheckout(true) }              // avoid extra checkout noise
   stages {
     stage('Stage 1: Build') {
       steps { 
