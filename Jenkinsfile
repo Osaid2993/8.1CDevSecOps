@@ -1,3 +1,4 @@
+// demo trigger from README step
 pipeline {
   agent any
   options { skipDefaultCheckout(true) }              // avoid extra checkout noise
